@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <%= javascript_include_tag 'artistdata/artist', 'artistdata/build-chart', 'artistdata/data-miner', 'artistdata/spotify-chart', 'd3.v3', 'jquery.min' %>
+  <%= stylesheet_link_tag 'artistdata/artistdata', media: 'all' %>
+</head>
+<body>
+  <h1 class="center-text">ARTIST DATA</h1>
+  <div class="stuff">
+    <p>
+      Welcome! This project compares the popularity of four different artists (via the Spotify API) using the D3 library!
+    </p>
+    <p>
+      <a href="https://github.com/matthewbillienyc">By Matthew Billie</a>
+    </p>
+  </div>
+  <div class="stuff">
+    <ul>
+      <li>Enter Artists:</li>
+      <li><input type="text" name="name" value=""></li>
+      <li><input type="text" name="name" value=""></li>
+      <li><input type="text" name="name" value=""></li>
+      <li><input type="text" name="name" value=""></li>
+      <li><button id="graph" type="button" name="button">Graph It!</button></li>
+    </ul>
+  </div>
+  <div id="graphbox">
+  </div>
+</body>

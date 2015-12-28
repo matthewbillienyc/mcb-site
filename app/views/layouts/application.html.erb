@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mcbsite</title>
+  <%= stylesheet_link_tag    'application', 'master', media: 'all' %>
+  <%= javascript_include_tag 'application', 'nav' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="clearfix">
+  <%= render 'layouts/nav' %>
+
+</div>
+<div class="container container-first clearfix">
+  <%= yield %>
+</div>
+
+</body>
+</html>

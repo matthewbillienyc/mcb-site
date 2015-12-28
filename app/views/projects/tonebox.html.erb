@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <%= javascript_include_tag 'tonebox/tonebox' %>
+  <%= stylesheet_link_tag 'tonebox/tonebox', media: 'all' %>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="center-text">THE TONE BOX</h1>
+    <p>
+      By Matthew Billie
+    </p>
+    <p>
+        <label for="soundType">Select tone:</label> <select name="soundType" id="soundType">
+            <option value="triangle" selected>Triangle</option>
+            <option value="sine">Sine</option>
+            <option value="square">Square</option>
+            <option value="sawtooth">Sawtooth</option>
+        </select>
+    </p>
+    <!-- Keyboard placeholder -->
+    <div class="tone-box">
+      <div class="keys" id="rowFour">
+      </div>
+      <div class="keys" id="rowThree">
+      </div>
+      <div class="keys" id="rowTwo">
+      </div>
+      <div class="keys" id="rowOne">
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,52 @@
+body {
+  font-family: courier;
+  margin: 0;
+  background-color: #c69898;
+}
+
+.center-text {
+  text-align: center;
+}
+
+div.stuff {
+  font-size: 1em;
+  font-weight: normal;
+  font-family: courier;
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+}
+
+input {
+  box-shadow: 0 0 2px #000;
+  width: 200px;
+}
+
+button {
+  font-family: courier;
+  background-color: #2e0b0b;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #494949;
+}
+
+#chart {
+  position: relative;
+}
+
+#graphbox {
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}

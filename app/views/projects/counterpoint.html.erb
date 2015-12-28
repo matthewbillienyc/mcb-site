@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <%= javascript_include_tag 'counterpoint/counterpoint' %>
+  <%= stylesheet_link_tag 'counterpoint/counterpoint', media: 'all' %>
+</head>
+<body>
+  <h1 class='center-text'>COUNTER POINT</h1>
+  <div class="stuff">
+    <p>
+      This is a basic example of writing three part counterpoint using the Web Audio API! It isn't the best counterpoint..
+      But hey, I'm a programmer! Oh wait.. I have a Masters in music too. Well forgive the parallels or any other bad part writing!
+    </p>
+    <p>
+      The highlights here are really the variable tempo and transposition, although I kind of like my one measure theme as well!
+    </p>
+    <p>
+      P.S. It's just one measure.
+    </p>
+    <p>
+      <a href="https://github.com/matthewbillienyc">By Matthew Billie</a>
+    </p>
+  </div>
+  <div class="stuff">
+    <ul class='control'>
+      <li><label for="bpm">BPM (40-180 please)</label></li>
+      <li><input type="text" id="bpm" name="bpm" value="60"></li>
+      <li><label for="tonic">Tonic Note (No double accidentals please!)</label></li>
+      <li><input type="text" id="tonic" name="tonic" value="C"></li>
+      <li><button id="theme">Theme</button></li>
+      <li><button id="counter" name="button">Counter Melody</button></li>
+      <li><button id="bass" name="button">Bass</button></li>
+      <li><button id="theme-and-counter" name="button">Theme with Counter Melody</button></li>
+      <li><button id="bass-and-theme" name="button">Bass and Theme</button></li>
+      <li><button id="bass-and-counter" name="button">Bass and Counter</button></li>
+      <li><button id="all-parts" name="button">All Parts</button></li>
+  </ul>
+</div>
+</body>
