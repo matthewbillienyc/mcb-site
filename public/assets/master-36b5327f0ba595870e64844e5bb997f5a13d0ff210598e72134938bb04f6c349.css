@@ -1,0 +1,198 @@
+body {
+  font-family: courier;
+  margin: 0;
+  background-color: #c69898;
+}
+
+nav {
+  margin-top: 10px;
+  height: 35px;
+  width: 100%;
+  font-size: 12pt;
+  font-weight: bold;
+  position: relative;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 600px;
+  height: 50px;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  float: left;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 35px;
+  color: #000;
+}
+
+nav li a {
+  margin-left: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+nav a:hover, nav a:active {
+  box-shadow: 0 0 5px #000;
+}
+
+nav a#pull {
+  display: none;
+}
+
+@media screen and (max-width : 600px) {
+  nav {
+    height: auto;
+  }
+  nav ul {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  nav li {
+    width: 50%;
+    float: left;
+    position: relative;
+  }
+  nav li a {
+    border-right: 1px solid #000;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  nav {
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav a#pull {
+    display: block;
+    width: 100%;
+    position relative;
+  }
+
+  nav a#pull:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  nav li {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  nav li a {
+  }
+}
+
+.container {
+  margin-left: 15%;
+  margin-right: 15%;
+  width: auto;
+}
+
+.center-text {
+  text-align: center;
+}
+[class*="col-"] {
+  float:left;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear:both;
+}
+[class*='col-'] {
+  padding-right: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+.col-1-3rd {
+  width: 33.33%;
+}
+.col-2-3rd {
+  width: 66.66%;
+}
+.col-full {
+  width: 100%;
+}
+.col-half {
+  width: 50%;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.top-margin {
+  margin-top: 20%;
+}
+
+.container-first:before {
+  content: "MCB";
+  color: #a77b7b;
+  font-size: 8em;
+  position: absolute;
+  z-index: -1;
+  top: 70%;
+  right: 15%;
+}
+
+ul.projects a {
+  color: #000;
+}
+
+ul.projects li {
+  margin: 20px;
+  padding: 10px;
+  width: 250px;
+}
+
+ul.projects li:hover {
+  box-shadow: 0 0 5px #000;
+}
