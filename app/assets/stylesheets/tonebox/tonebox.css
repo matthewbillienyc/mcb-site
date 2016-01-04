@@ -13,8 +13,6 @@ html {
 
 body {
     font-size: 2rem;
-    font-family: courier;
-    background: #c69898;
 }
 
 select {
@@ -58,7 +56,7 @@ select {
 }
 
 .tone-box {
-  background-color: #b97070;
+  background-color: #000000;
   box-shadow: 0 0 15px #000;
   border-radius: 1%;
   padding: 10px;

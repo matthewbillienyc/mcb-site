@@ -1,7 +1,17 @@
 body {
-  font-family: courier;
+  font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
   margin: 0;
-  background-color: #c69898;
+  background-color: #575b7e;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: ;
+}
+
+ul {
+  list-style-type: none;
 }
 
 nav {
@@ -53,6 +63,8 @@ nav li a {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
 }
 
 nav a:hover, nav a:active {
@@ -173,7 +185,7 @@ nav a#pull {
   margin-top: 20%;
 }
 
-.container-first:before {
+/*.container-first:before {
   content: "MCB";
   color: #a77b7b;
   font-size: 8em;
@@ -181,6 +193,19 @@ nav a#pull {
   z-index: -1;
   top: 70%;
   right: 15%;
+}*/
+
+.container-first:before {
+  content: "";
+  background-color: #3c415c;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 170px;
+  -webkit-transform: skewY(-7deg);
+  -moz-transform: skewY(-7deg);
+  transform: skewY(-7deg);
 }
 
 ul.projects a {

@@ -6,6 +6,7 @@ $(function(){
 
   $('#graph').click(function(){
     var $inputs = $("input")
+  
     $inputs.each(function(i){
       var dataMiner = new DataMiner(this.value);
       dataMiner.getArtistData();
